@@ -1,6 +1,6 @@
 
 
-class FeistelCipher:
+class FeistelCipher: # <---OOP!?!
 
 
     # Initialize the cipher with a secret key and number of rounds
@@ -53,7 +53,7 @@ class FeistelCipher:
 
         # Padding: If length is odd, add a placeholder.
         if len(text) % 2 != 0:
-            text += " "  # Padding with space
+            text += " "  # <---Padding with space
 
         encrypted_text = []
 

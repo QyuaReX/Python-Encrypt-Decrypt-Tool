@@ -3,7 +3,7 @@ import os
 import base64 # Safer for storage
 
 
-class FileHandler:
+class FileHandler: # <---OOP again!?!
 
     # Function reads a file from the disk and returns the file as a string
     @staticmethod
@@ -68,7 +68,7 @@ class FileHandler:
             return filepath + ".enc"
         elif mode == 'decrypt':
             if filepath.endswith(".enc"):
-                return filepath[:-4]  # <---- removes .enc
+                return filepath[:-4]  # <---Removes .enc
             else:
                 return filepath + ".dec"
         return filepath + ".out"
