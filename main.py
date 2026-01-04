@@ -227,7 +227,7 @@ def run_decryption(args):
 def main():
     # Setup Argument Parser
     # CLI help menu, listens to flags
-    parser = argparse.ArgumentParser(description="Python CLI Encryption Tool (Feistel Cipher)")  # <---Explain
+    parser = argparse.ArgumentParser(description="Python CLI Encryption Tool (Feistel Cipher)")
 
     # Flags
     # Create groups so you can't choose both encrypt and decrypt at the same time
