@@ -11,12 +11,12 @@ class FileHandler: # <---OOP again!?!
         if not os.path.exists(filepath):
             raise FileNotFoundError(f"Error: The file '{filepath}' does not exist.")
 
-        # Try UTF-8 first (Standard)
+        # Try UTF-8 first
         try:
             with open(filepath, 'r', encoding='utf-8') as f:
                 return f.read()
         except UnicodeDecodeError:
-            # If UTF-8 fails, try UTF-16 (Solves PowerShell file creation)
+            # If UTF-8 fails, try UTF-16
             try:
                 with open(filepath, 'r', encoding='utf-16') as f:
                     return f.read()

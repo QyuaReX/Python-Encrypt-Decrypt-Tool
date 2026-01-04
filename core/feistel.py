@@ -42,7 +42,7 @@ class FeistelCipher: # <---OOP!?!
             # New Left becomes the Old Right
             L = prev_R
 
-        # After the final round, we swap L and R to make the operation symmetrical and this is standard in DES and other Feistel ciphers
+        # After the final round swap L and R to make the operation symmetrical
         L, R = R, L
 
         # Convert integers back to characters
